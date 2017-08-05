@@ -51,9 +51,15 @@ canvas{
 }
 
 @keyframes changeColor {
-  0% {background:#00557a;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
-  50% {background:#00727a;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
-  100% {background:#007a6c;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
+  /*
+  0% {background:#00557a;background-image:linear-gradient(to top,black,#00557a);}
+  50% {background:#00727a;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);}
+  100% {background:#007a6c;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);}
+  */
+
+  0% {background:#00557a;background-image:linear-gradient(to top,rgba(5,5,5,.8),#00557a);}
+  50% {background:#00727a;background-image:linear-gradient(to top,rgba(5,5,5,.8),#00727a);}
+  100% {background:#007a6c;background-image:linear-gradient(to top,rgba(5,5,5,.8),#00727a);}
 }
 
 
