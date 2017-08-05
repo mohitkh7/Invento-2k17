@@ -49,11 +49,13 @@ canvas{
   background-repeat: no-repeat;
   animation: changeColor 16s infinite alternate;
 }
+
 @keyframes changeColor {
-  0% {background:#020044;background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);}
-  50% {background:#00727a;background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);}
-  100% {background:#160147;background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);}
+  0% {background:#00557a;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
+  50% {background:#00727a;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
+  100% {background:#007a6c;/*background-image:linear-gradient(to top,black,rgba(0,0,0,0),black);*/}
 }
+
 
 
 #overlay{height:100%;position:absolute;top:0;right:0;left:0;background:transparent;font-family:'Lato';text-align:center;}
