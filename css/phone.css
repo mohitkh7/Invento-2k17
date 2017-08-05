@@ -1,0 +1,65 @@
+@media only screen and (max-width: 700px) {
+[id^="circle"]{
+  position:absolute; top:2em; left:calc(50% - 150px);}
+#circle31{background:rgba();
+        width:19em;height:19em;
+        border-radius:30em;
+        margin:2.5em;
+        animation:spin 3s infinite linear;
+  }
+    #circle31::before,#circle31::after{position: absolute;content:''; }
+    #circle31::before{border-top:2px solid #68fff4;border-bottom:2px solid #68fff4;border-radius:30em; width:calc(100%);
+    height:calc(100% );
+    top:-1px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 1; }
+
+#circle2{
+        border-color:#68fff4 rgba(0,0,0,0) #68fff4 rgba(0,0,0,0);
+        border-width:3px;
+        border-style:dotted;
+        width:22em;height:22em;
+        border-radius:30em;
+        margin:1em;
+        animation:spin2 14s infinite linear;
+      }
+#circle1{font-size:1em;
+        border-color:#68fff4 rgba(0,0,0,0) #68fff4 rgba(0,0,0,0);
+        border-width:4px;
+        border-style:solid;
+        width:24em;height:24em;
+        border-radius:30em;
+        animation:spin1 18s infinite linear;
+      }
+#intro-wrap{ position: absolute;left:19.5%;top:10em; }
+#intro-wrap h1{font-size:2.2em;}
+
+.btn-top{margin-top:0;}
+.btn-space{padding-left:0px;}
+#btns ul li{font-size:1.7em;}
+#btns{bottom:4em;}
+#btns #btn-left{float:left;margin-left:10px;transform:skewX(-30deg);}
+#btn-left .main-btn div{transform:skewX(30deg);}
+#btn-left .main-btn ,#btn-right .main-btn{ height: 30px;}
+
+#btns #btn-right{transform:skewX(30deg);margin-right:10px;position:absolute;bottom:2.5em;right:0;}
+#btn-right .main-btn div{transform:skewX(-30deg);}
+
+#btns #btn-mid{transform:rotateX(30deg);}
+#btn-mid .main-btn{ width:250px;perspective:200px;height: 30px;box-shadow:2px 2px 0px #7cf4ff;}
+#btn-mid div{transform:rotateX(-30deg) scaleY(1.7) scaleX(1.2) skewX(15deg);left:1.7em;}
+
+@keyframes fall4 {
+  0% {
+    transform: translateY(50em);
+  }  100% {
+    opacity:1;
+  }}
+.main-btn {
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 1em;
+    background: rgba(255, 255, 255, 0.15); } 
+
+}
+
