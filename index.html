@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Invento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="lib/sass/style.css">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js">
+
+  <div id="overlay">
+    <center>
+    <div id="intro-wrap">
+    <h2 id="clg"> </h2>
+      <h1><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
+      <h2 id="date"><span>#</span> <span>Coming</span><span>Soon</span></h2>
+    </div>
+    </center>
+
+    <div id="btns"><center>
+      <ul>
+        <li>
+        	<a href="https://www.facebook.com/InventoIET">
+	        	<div class="box bar">ABOUT US</div>
+	        </a>
+        </li>
+        <li class="btn-space"></li>
+        <li><a class="button box bar" href="https://m.me/kalpit.me">CAMPUS AMBASSDOR</a></li>
+             <li class="btn-space"></li>
+        <li><a class="button box bar" href="mailto:info@invento.online">CONTACT US</a></li>
+      </ul></center>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<style type="text/css">
+  body {
+  margin:0;
+  text-align: center;  color: #fff;
+  overflow: hidden;}
+
+</style>
+<script>
+var clg=new String("IET-DAVV");
+ for(var i=0;i<clg.length;i++)
+  {
+    var node = document.createElement("span");
+    var textnode = document.createTextNode(clg[i]+"\xa0");
+    node.appendChild(textnode);
+    //node.setAttribute('id','clg'+i);
+    document.getElementById("clg").appendChild(node); }
+</script>
+
+</body>
+</html>
