@@ -41,19 +41,10 @@ canvas{  display:block;  vertical-align:bottom;}
 [id^="circle"]{
   position:absolute;left:36%; top:2em;
     }
-#circle3{
-        border-color:#68fff4 rgba(0,0,0,0) #68fff4 rgba(0,0,0,0);
-        border-width:1px;
-        border-style:solid;
+#circle31{background:rgba();
         width:25em;height:25em;
         border-radius:30em;
-        margin:1.75em;
-        animation:spin 3s infinite linear;
-      }
-#circle31{
-        width:25em;height:25em;
-        border-radius:30em;
-        margin:1.75em;
+        margin:2em;
         animation:spin 3s infinite linear;
       }
     #circle31::before,#circle31::after{position: absolute;content:''; }
@@ -108,6 +99,35 @@ canvas{  display:block;  vertical-align:bottom;}
     transform: rotate(-450deg);
     }
 }
+
+#menu-left{position:absolute; right:65%; top:9em; transform:skewX(30deg);}
+#menu-left ul li{ background:white;margin:20px 0px 20px 20px;
+                width:155px;padding:2px; 
+                box-shadow:-4px -4px 0px teal;
+                animation:equilizer linear alternate 1s infinite;}
+#menu-left ul li:nth-child(1){margin-left:130px; }
+#menu-left ul li:nth-child(3){margin-left:80px; }
+#menu-left ul li button{transform:skewX(-30deg);background:none;border:none;padding:0;color:black;font-weight:bold;}
+
+#menu-right{position:absolute; left:63%; top:9em;transform:skewX(-30deg);}
+#menu-right ul li{background:white;margin:20px 0px 20px 20px;
+                  width:155px;padding:2px; 
+                box-shadow:4px -4px 0px teal;
+                  animation:equilizer2 linear alternate 1s infinite;}
+#menu-right ul li:nth-child(1){margin-left:-50px;}
+#menu-right ul li:nth-child(2){margin-left:50px;}
+#menu-right ul li:nth-child(3){margin-left:0px;}
+#menu-right ul li button{  transform:skewX(30deg);background:none;border:none;padding:0;color:black;font-weight:bold; }
+
+@keyframes equilizer{
+  0%{border-left:0px solid white;}
+  100%{border-left:5px solid white;}
+}
+@keyframes equilizer2{
+  0%{border-right:0px solid white;}
+  100%{border-right:5px solid white;}
+}
+
 #intro-wrap{ position: absolute;left:39%;top:12em; }
 #intro-wrap h1{font-size:3em;}
 
@@ -132,25 +152,25 @@ canvas{  display:block;  vertical-align:bottom;}
 /* BTNS */
 #btns{ position:absolute;bottom:5em;width:100%;}
 #btns ul li{display: inline-block;font-size:2em;text-align: center;}
-.btn-space{padding-left:250px;}
+.btn-space{padding-left:10%;}
 
 .btn-top{margin-top:-5em;}
 #btns{perspective:200px;}
-.main-btn div{position:absolute;top:0px;z-index:10;}
+.main-btn div{position:absolute;top:0px;}
 #btns #btn-left{transform:skewX(-60deg);}
-#btn-left .main-btn{ width:100px;height: 20px; box-shadow:2px 2px 0px #7cf4ff;}
+#btn-left .main-btn{ width:110px;height: 20px; box-shadow:2px 2px 0px #7cf4ff;}
 #btn-left .main-btn div{transform:skewX(60deg); left:15px;}
 
 #btns #btn-right{transform:skewX(60deg);}
-#btn-right .main-btn{ width:130px;height: 20px;box-shadow:-2px 2px 0px #7cf4ff; }
+#btn-right .main-btn{ width:140px;height: 20px;box-shadow:-2px 2px 0px #7cf4ff; }
 #btn-right .main-btn div{transform:skewX(-60deg);}
 
 #btns #btn-mid{transform:rotateX(60deg);}
-#btn-mid .main-btn{ width:250px;perspective:200px;height: 30px;box-shadow:2px 2px 0px #7cf4ff;}
-#btn-mid div{transform:rotateX(-30deg) scaleY(3) scaleX(1.2) skewX(15deg);}
+#btn-mid .main-btn{ width:270px;perspective:200px;height: 30px;box-shadow:2px 2px 0px #7cf4ff;}
+#btn-mid div{transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg);}
 
 .main-btn {
-  font-family: Vampiro One;
+  font-family:Aldrich;
   position: relative;
   vertical-align: middle;
   color: white;
@@ -199,37 +219,3 @@ canvas{  display:block;  vertical-align:bottom;}
     font-size: 5px; }
   100% {
     opacity: 1; } }
-@media only screen and (max-width: 700px) {
-  #intro-wrap{top:8em;}
-  #intro-wrap h1{font-size:5em;letter-spacing:0.2em;}
-  #btns{bottom:2em;}
-  #btns ul li{font-size:1.7em;}
-  .btn-space{padding-left:10px;}
-@keyframes fall {
-  0% {
-    transform: translateY(-50em);
-  }
-}
-@keyframes fall2 {
-  0% {
-    transform: translateY(50em);
-  }
-}
-@keyframes fall3 {
-  0% {
-    transform: translateY(-50em);
-  }
-}
-@keyframes fall4 {
-  0% {
-    transform: translateY(50em);
-  }  100% {
-    opacity:1;
-  }}
-.main-btn {
-    padding: 0px 20px 0px 20px;
-    margin-bottom: 1em;
-    background: rgba(255, 255, 255, 0.15); } 
-
-}
-
