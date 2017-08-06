@@ -46,7 +46,7 @@
 			<div id="btns">
 			    <center>
 					<ul>
-				        <li id="[btn-left">
+				        <li id="btn-left">
 					        <a class="button main-btn btn-top" href="#"><div>ABOUT US</div></a></li>
 						<li class="btn-space"></li>
 				        <li id="btn-mid"><a class="button main-btn" href="#"><div>CAMPUS AMBASSDOR</div></a></li>
@@ -55,7 +55,126 @@
 					</ul>
 			    </center>
 			</div>
-		</div>    
+		</div>
+
+		<div id="pop-up-sample">
+			<div id="sample">
+				<div class="header">
+					<span class="title">Title</span>
+					<span class="close-btn">
+						<img src="http://cdn3.iconfinder.com/data/icons/iconic-1/32/x_alt-128.png" alt="X" />
+					</span>
+				</div>
+				<div class="content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					</p>
+				</div>
+			</div>
+		</div> 
+
+		<!-- Script wriiten by mohit -->
+		<script>
+			$('#pop-up-sample').hide();
+
+			$('#btn-left').click(function(){
+				$('#overlay').fadeOut(500);
+				$('#pop-up-sample').fadeIn(2000);
+
+			});
+
+			$('.close-btn').click(function(){
+				$('#pop-up-sample').fadeOut(500);
+				$('#overlay').fadeIn(2000);
+
+			})
+		</script>
+
+		<!-- style written by mohit    -->
+		<style>
+			#pop-up-sample{
+				height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
+			}
+			#sample{
+				margin:40px;
+				padding:20px;
+				background: rgba(255,255,255,.1);
+				font-size:20px;
+				font-family:raleway;
+				height:80%;
+				border-radius:15px;
+				overflow-y: scroll;
+				border: 2px solid transparent;
+			}
+			#sample:hover{
+				background: rgba(255,255,255,.12);				
+			}
+			#sample:hover::before {
+				border-top-color: #60daaa;
+				border-right-color: #60daaa;
+				-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+				transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+			}
+			#sample:hover::after {
+				border-bottom-color: #60daaa;
+				border-left-color: #60daaa;
+				-webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+				transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+			}
+
+			.header{
+				padding:10px;
+				margin:auto;
+				font-size:1.5em;
+			}
+			.header .title{
+				font-size:1.5em;
+			}
+			.content{
+				padding-top:10px;
+				padding-bottom:10px;								
+			}
+			.close-btn{
+				float:right;
+				cursor:pointer;
+				cursor: hand;
+			}
+			/* Close Button Animation */
+			.close-btn img{
+				/*top: 5px;*/
+				/*right: 5px;*/
+				width: 40px;
+				height: 40px;
+				/*position: absolute;*/
+				-webkit-transition: -webkit-transform .25s, opacity .25s;
+				-moz-transition: -moz-transform .25s, opacity .25s;
+				transition: transform .25s, opacity .25s;
+				opacity: .75;
+			}
+			.close-btn img:hover {
+				-webkit-transform: rotate(270deg);
+				-moz-transform: rotate(270deg);
+				transform: rotate(270deg);
+				opacity: 1;
+			}
+		</style>
 		<!-- scripts -->
 		<script src="js/particles.min.js"></script>
 		<script src="js/app.js"></script>
