@@ -5,7 +5,9 @@
   <meta name="theme-color" content="#00222b" />
   <title>Invento</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Vampiro+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="stylesheet" media="screen" href="css/phone.css">
@@ -15,32 +17,44 @@
 <!-- particles.js container -->
 <div id="particles-js"></div>
 
-  <div id="overlay">
-    <center>
-      <div id="circle1"></div>
-      <div id="circle2"></div>
-    
-      <div id="circle31"></div>
-        <div id="intro-wrap">
-          <h2 id="clg"></h2>
+<div id="overlay">
+  <center>
+    <div id="circle1"></div>
+    <div id="circle2"></div>    
+    <div id="circle31"></div>
+    <div id="menu-left">
+        <ul>
+            <li><button>PHOTOS</button></li>
+            <li><button>HIGLIGHTS</button></li>
+            <li><button>COMPETIOTIONS</button></li>
+        </ul>
+    </div>
+    <div id="menu-right">
+        <ul>
+            <li><button>PHOTOS</button></li>
+            <li><button>HIGLIGHTS</button></li>
+            <li><button>COMPETIOTIONS</button></li>
+        </ul>
+    </div>
+      <div id="intro-wrap">
+        <h2 id="clg"></h2>
           <h1 class="invento"><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
           <h2 id="date"><span>17 - 18</span> <span>&nbsp;SEPTEMBER</span><span>&nbsp; 2017</span></h2>
-        </div>
-    </center>
-    <div id="btns">
+      </div>
+  </center>
+  <div id="btns">
     <center>
       <ul>
         <li id="btn-left">
         <a class="button main-btn btn-top" href="#"><div>ABOUT US</div></a></li>
-        <li class="btn-space"></li>
+          <li class="btn-space"></li>
         <li id="btn-mid"><a class="button main-btn" href="#"><div>CAMPUS AMBASSDOR</div></a></li>
-             <li class="btn-space"></li>
+          <li class="btn-space"></li>
         <li id="btn-right"><a class="button main-btn btn-top" href="#"><div>CONTACT US</div></a></li>
       </ul>
     </center>
-    </div>
   </div>
-
+</div>    
 <!-- scripts -->
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
@@ -55,6 +69,7 @@ body {
   overflow: hidden;}
 #intro-wrap h1{
    font-family: titlefont; font-weight: 100; letter-spacing:5px;}
+      }
 </style>
 <script>
 var clg=new String("IET-DAVV");
@@ -65,6 +80,7 @@ var clg=new String("IET-DAVV");
     node.appendChild(textnode);
     //node.setAttribute('id','clg'+i);
     document.getElementById("clg").appendChild(node); }
+
 </script>
 
 </body>
