@@ -62,7 +62,7 @@
 				<div class="header">
 					<span class="title">Title</span>
 					<span class="close-btn">
-						<img src="http://cdn3.iconfinder.com/data/icons/iconic-1/32/x_alt-128.png" alt="X" />
+						<img src="images/close_btn_image.png" alt="X" />
 					</span>
 				</div>
 				<div class="content">
@@ -72,10 +72,41 @@
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+
+						<br /><br />
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						<br /><br />
 						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<br /><br />
+						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -120,7 +151,7 @@
 				font-family:raleway;
 				height:80%;
 				border-radius:15px;
-				overflow-y: scroll;
+				/*overflow-y: scroll;*/
 				border: 2px solid transparent;
 			}
 			#sample:hover{
@@ -149,7 +180,11 @@
 			}
 			.content{
 				padding-top:10px;
-				padding-bottom:10px;								
+				padding-bottom:10px;
+				padding-right: 20px;
+				overflow-y:scroll;
+				height: inherit;
+				text-align:left;								
 			}
 			.close-btn{
 				float:right;
@@ -174,6 +209,35 @@
 				transform: rotate(270deg);
 				opacity: 1;
 			}
+
+			/* customized scroll bar */
+			.content::-webkit-scrollbar-track
+			{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+				background-color: transparent;
+				border-radius: 10px;
+				border: solid 3px transparent;
+			}
+
+			.content::-webkit-scrollbar
+			{
+				width: 5px;
+				background-color: transparent;
+			}
+
+			.content::-webkit-scrollbar-thumb
+			{
+				/*background-color: #0ccfc1;*/
+				border-radius: 5px;
+				background-color: transparent;;
+				background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#0ccfc1),
+									   to(#0ccfc1),
+									   color-stop(.6,#60daaa));
+			}
+
 		</style>
 		<!-- scripts -->
 		<script src="js/particles.min.js"></script>
