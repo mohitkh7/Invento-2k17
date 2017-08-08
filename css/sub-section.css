@@ -1,5 +1,5 @@
 /* css file for every sub section */
-.sub-section{
+.pop-up{
 	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 }
 .body{
@@ -39,6 +39,8 @@
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+.header button{border:none;background:transparent;outline:none;}
+
 .content{
 	padding-top:10px;
 	padding-bottom:10px;
@@ -98,4 +100,8 @@
 						   from(#0ccfc1),
 						   to(#0ccfc1),
 						   color-stop(.6,#60daaa));
+}
+
+@media only screen and (max-width: 700px) {
+	#sample{ margin:20px;   }
 }
