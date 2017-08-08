@@ -5,7 +5,7 @@
 		<meta name="theme-color" content="#00222b" />
 		<title>Invento</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Vampiro+One' rel='stylesheet' type='text/css'>
@@ -58,8 +58,8 @@
 			</div>
 		</div>
 
-		<div class="pop-up-sample sub-section" id="title">
-			<div id="sample" class="body">
+		<div class="sub-section" id="title">
+			<div class="body">
 				<div class="header">
 					<span class="title">Competitions</span>
 					<span class="close-btn">
@@ -85,18 +85,20 @@
    		  						<center>  <p> <img src="images/comp/roborace.jpg" class="img-responsive" alt="roborace Image" style="max-width:400px ;max-height:400px ;"></p></center>
    							</div>
 
-						<br /><br />
-					</div>
+							<br /><br />
+						</div><!-- row // -->
 					</p>
-				</div>
-			</div>		
-		</div> 
+				</div><!-- content // -->
+			</div><!-- body // -->		
+		</div><!-- sub-section // -->
 
 		<!-- Script wriiten by mohit -->
 		<script>
 			// functions to be run before page loads 
 			// hiding sub-sections
-			$('.pop-up-sample').hide();
+
+			$('.sub-section').hide();
+
 			//before page loads activity ends
 
 			window.onload = function(){
@@ -115,6 +117,7 @@
 				$('#home').fadeOut(1000);
 				$(des).fadeIn(2000);
 			};
+
 			function section_to_home(src){
 				$(src).fadeOut(1000);
 				$('#home').fadeIn(2000);
@@ -174,6 +177,7 @@
 				cursor:pointer;
 				cursor: hand;
 			}
+
 			/* Close Button Animation */
 			.close-btn img{
 				/*top: 5px;*/
@@ -192,7 +196,7 @@
 				transform: rotate(270deg);
 				opacity: 1;
 			}
-
+			
 			/* customized scroll bar */
 			.content::-webkit-scrollbar-track
 			{
