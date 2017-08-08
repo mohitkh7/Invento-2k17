@@ -68,7 +68,7 @@ body{overflow:hidden;}
 .btn-top{margin-top:0;}
 .btn-space{padding-left:0px;}
 #btns ul li{font-size:1.45em;}
-#btns{bottom:2em;}
+#btns{bottom:10px;}
 #btns #about-btn{float:left;margin-left:0px;transform:skewX(-30deg);with:50px;}
 #about-btn .main-btn div{transform:skewX(30deg);}
 #about-btn .main-btn ,#contact-btn .main-btn{ height: 30px;}
