@@ -18,7 +18,7 @@
 		<!-- particles.js container -->
 		<div id="particles-js"></div>
 
-		<div id="overlay">
+		<div id="home">
 			<center>
 			    <div id="circle1"></div>
 			    <div id="circle2"></div>    
@@ -46,7 +46,7 @@
 			<div id="btns">
 			    <center>
 					<ul>
-				        <li id="btn-left">
+				        <li id="btn-left" onclick="home_to_section('#title')">
 					        <a class="button main-btn btn-top" href="#"><div>ABOUT US</div></a></li>
 						<li class="btn-space"></li>
 				        <li id="btn-mid"><a class="button main-btn" href="#"><div>CAMPUS AMBASSDOR</div></a></li>
@@ -57,11 +57,11 @@
 			</div>
 		</div>
 
-		<div id="pop-up-sample">
+		<div class="pop-up-sample" id="title">
 			<div id="sample">
 				<div class="header">
 					<span class="title">Title</span>
-					<span class="close-btn">
+					<span class="close-btn" onclick="section_to_home('#title')">
 						<img src="images/close_btn_image.png" alt="X" />
 					</span>
 				</div>
@@ -92,55 +92,47 @@
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					</p>
 				</div>
-			</div>
+			</div>		
 		</div> 
 
 		<!-- Script wriiten by mohit -->
 		<script>
-			$('#pop-up-sample').hide();
+			// functions to be run before page loads 
+			// hiding sub-sections
+			$('.pop-up-sample').hide();
+			//before page loads activity ends
 
-			$('#btn-left').click(function(){
-				$('#overlay').fadeOut(500);
-				$('#pop-up-sample').fadeIn(2000);
-
-			});
-
-			$('.close-btn').click(function(){
-				$('#pop-up-sample').fadeOut(500);
-				$('#overlay').fadeIn(2000);
-
-			})
+			window.onload = function(){
+				var clg=new String("IET-DAVV");
+				for(var i=0;i<clg.length;i++)
+				{
+					var node = document.createElement("span");
+					var textnode = document.createTextNode(clg[i]+"\xa0");
+				    node.appendChild(textnode);
+				    //node.setAttribute('id','clg'+i);
+				    document.getElementById("clg").appendChild(node); 
+				}
+			}
+			
+			function home_to_section(des){
+				$('#home').fadeOut(1000);
+				$(des).fadeIn(2000);
+			};
+			function section_to_home(src){
+				$(src).fadeOut(1000);
+				$('#home').fadeIn(2000);
+			}
 		</script>
 
 		<!-- style written by mohit    -->
 		<style>
-			#pop-up-sample{
+			.pop-up-sample{
 				height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 			}
 			#sample{
@@ -256,18 +248,5 @@
 				font-family: titlefont; font-weight: 100; letter-spacing:5px;}
 			}
 		</style>
-
-		<script>
-			var clg=new String("IET-DAVV");
-			for(var i=0;i<clg.length;i++)
-			{
-				var node = document.createElement("span");
-				var textnode = document.createTextNode(clg[i]+"\xa0");
-			    node.appendChild(textnode);
-			    //node.setAttribute('id','clg'+i);
-			    document.getElementById("clg").appendChild(node); 
-			}
-
-		</script>
 	</body>
 </html>
