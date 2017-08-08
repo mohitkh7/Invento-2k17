@@ -12,13 +12,14 @@
 		<link rel="stylesheet" media="screen" href="css/style.css">
 		<link rel="stylesheet" media="screen" href="css/phone.css">
 		<link rel="stylesheet" media="screen" href="css/sass/style.css">
+		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 	</head>
 
 	<body>
 		<!-- particles.js container -->
 		<div id="particles-js"></div>
 
-		<div id="home">
+		<div id="home" class="main-section">
 			<center>
 			    <div id="circle1"></div>
 			    <div id="circle2"></div>    
@@ -57,45 +58,35 @@
 			</div>
 		</div>
 
-		<div class="pop-up-sample" id="title">
-			<div id="sample">
+		<div class="pop-up-sample sub-section" id="title">
+			<div id="sample" class="body">
 				<div class="header">
-					<span class="title">Title</span>
-					<span class="close-btn" onclick="section_to_home('#title')">
-						<img src="images/close_btn_image.png" alt="X" />
+					<span class="title">Competitions</span>
+					<span class="close-btn">
+						<img src="images/close_btn_image.png" alt="X" onclick="section_to_home('#title')" />
 					</span>
 				</div>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						IET DAVV Indore presents one of the biggest tech fest of central India "INVENTO 2k17". The fest would be a 2 day event that would run all throughout the day from 17-18 september 2017. INVENTO brings with it a lot of competitions and workshops as well,precisely, we have workshops on IC engines, 3d printing , robotics ,ethical hacking ,construction project management and much more. Engineering students from all branch and passouts can get benefit from the workshops. Apart from these workshop ,we have workshops on IOT , cloud computing ,android app development. We also have Inter college competitions which are our major prize winning event for you. This includes competitions on roborace, coding , hacking ,circuitry and much more. To add to the our popular events list, we have motivational session by many distinctive personalities as well.
 
 						<br /><br />
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						<div class="row">
+
+							<div class="col-sm-3 col-md-6 col-lg-4">
+   		  						 <center> <p> <img src="images/comp/coding.jpg" class="img-responsive" alt="Coding Image" style="max-width:400px ;max-height:400px;height:300px;"></p></center>
+   							</div>
+
+   							<div class="col-sm-3 col-md-6 col-lg-4" > 
+   		  						<center>  <p> <img src="images/comp/ecd.jpg" class="img-responsive" alt="Electronics ciruit design Image" style="max-width:400px ;max-height:400px ;"></p></center> 
+   							</div>
+
+   							<div class="col-sm-3 col-md-6 col-lg-4">
+   		  						<center>  <p> <img src="images/comp/roborace.jpg" class="img-responsive" alt="roborace Image" style="max-width:400px ;max-height:400px ;"></p></center>
+   							</div>
+
 						<br /><br />
-						
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						<br /><br />
-						
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						
+					</div>
 					</p>
 				</div>
 			</div>		
@@ -132,30 +123,30 @@
 
 		<!-- style written by mohit    -->
 		<style>
-			.pop-up-sample{
+			.sub-section{
 				height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 			}
-			#sample{
+			.body{
 				margin:40px;
 				padding:20px;
 				background: rgba(255,255,255,.1);
 				font-size:20px;
 				font-family:raleway;
-				height:80%;
+				height:90%;
 				border-radius:15px;
 				/*overflow-y: scroll;*/
 				border: 2px solid transparent;
 			}
-			#sample:hover{
+			.sub-section > .body:hover{
 				background: rgba(255,255,255,.12);				
 			}
-			#sample:hover::before {
+			.sub-section > .body:hover::before {
 				border-top-color: #60daaa;
 				border-right-color: #60daaa;
 				-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 				transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 			}
-			#sample:hover::after {
+			.sub-section > .body:hover::after {
 				border-bottom-color: #60daaa;
 				border-left-color: #60daaa;
 				-webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
@@ -163,7 +154,7 @@
 			}
 
 			.header{
-				padding:10px;
+				padding-bottom:10px;
 				margin:auto;
 				font-size:1.5em;
 			}
@@ -176,7 +167,7 @@
 				padding-right: 20px;
 				overflow-y:scroll;
 				height: inherit;
-				text-align:left;								
+				text-align:justify;								
 			}
 			.close-btn{
 				float:right;
