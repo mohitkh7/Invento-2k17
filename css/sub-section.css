@@ -40,6 +40,13 @@
 	text-decoration: underline;
 }
 .header button{border:none;background:transparent;outline:none;}
+.header .title{
+	width:90%;
+}
+.header .close-btn{
+	width:10%;
+	text-align: right;
+}
 
 .content{
 	padding-top:10px;
@@ -50,18 +57,19 @@
 	text-align:justify;								
 }
 .close-btn{
-	float:right;
-	cursor:pointer;
-	cursor: hand;
+	float: 		right;
+	cursor: 	pointer;
+	cursor: 	hand;
+	display: 	inline-block;
 }
 
 /* Close Button Animation */
 .close-btn img{
 	/*top: 5px;*/
 	/*right: 5px;*/
-	width: 40px;
-	height: 40px;
+	/*height: auto;*/
 	/*position: absolute;*/
+	float: right;
 	-webkit-transition: -webkit-transform .25s, opacity .25s;
 	-moz-transition: -moz-transform .25s, opacity .25s;
 	transition: transform .25s, opacity .25s;
@@ -108,5 +116,11 @@
 	}
 	.body{
 		font-size: 12px;
+		margin:5px;
+		padding-left:3px;
+		padding-right:3px;
+	}
+	.content{
+		padding-right: 10px;
 	}
 }
