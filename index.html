@@ -1,260 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#00222b" />
-        <title>Invento 2k17 IET DAVV, Indore's Annual TechFest</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" media="screen" href="css/style.css">
-        <link rel="stylesheet" media="screen" href="css/phone.css">
-        <link rel="stylesheet" media="screen" href="css/sass/style.css">
-        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-    </head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#00222b" />
+		<title>Invento 2k17 IET DAVV, Indore's Annual TechFest</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Vampiro+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" media="screen" href="css/style.css">
+		<link rel="stylesheet" media="screen" href="css/phone.css">
+		<link rel="stylesheet" media="screen" href="css/sass/style.css">
+		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
 
-    <body>
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
+		<link rel="stylesheet" media="screen" href="css/invento-title.css">
+		<link rel="stylesheet" media="screen" href="css/sub-section.css">
+		<link rel="stylesheet" media="screen" href="css/contact.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
 
-            <nav class="menu-left">
-                <ul>
-                    <li><button>PHOTOS</button></li>
-                    <li><button>HIGLIGHTS</button></li>
-                    <li><button onclick="pop('competitions')">COMPETIOTIONS</button></li>
-                </ul>
-            </nav>
-            <nav class="menu-right">
-                <ul>
-                    <li><button onclick="pop('about')">PHOTOS</button></li>
-                    <li><button>HIGLIGHTS</button></li>
-                    <li><button onclick="pop('competitions')">COMPETIOTIONS</button></li>
-                </ul>
-            </nav>
-        <div id="navigation">
-            <button style="background:transparent; border:none;z-index:20;outline:none"><img src="menu.png"></button>
-        </div>
-        <div id="phone-nav-back"></div>                
-        <div id="overlay">
-            <center>
-                <div id="circle1"></div>
-                <div id="circle2"></div>    
-                <div id="circle31"></div>
-            </center>
-            <div id="intro-wrap">
-                    <h2 id="clg"></h2>
-                    <h1 class="invento"><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
-                    <h2 id="date"><span>17 - 18</span> <span>&nbsp;SEPTEMBER</span><span>&nbsp; 2017</span></h2>
-                </div>
-            <div id="btns">
-                <center>
-                    <ul>
-                        <li id="about-btn"><a class="button main-btn btn-top" onclick="pop('about')"><div>ABOUT US</div></a></li>
-                        <li class="btn-space"></li>
-                        <li id="campus-btn"><a class="button main-btn" href="#"><div>CAMPUS AMBASSDOR</div></a></li>
-                        <li class="btn-space"></li>
-                        <li id="contact-btn"><a class="button main-btn btn-top" href="#"><div>CONTACT US</div></a></li>
-                    </ul>
-                </center>
-            </div>
-        </div>
+	<body>
+		<!-- particles.js container -->
+		<div id="particles-js"></div>
 
-        <div class="pop-up" id="competitions">
-            <div class="body">
-                <div class="header">
-                    <span class="title">Competitions</span>
-                    <button onclick="closepop('competitions')" class="close-btn">
-                        <img src="images/close_btn_image.png" alt="X"/>
-                    </button>
-                </div>
-                <div class="content">
-                    <p>
-                        IET DAVV Indore presents one of the biggest tech fest of central India "INVENTO 2k17". The fest would be a 2 day event that would run all throughout the day from 17-18 september 2017. INVENTO brings with it a lot of competitions and workshops as well,precisely, we have workshops on IC engines, 3d printing , robotics ,ethical hacking ,construction project management and much more. Engineering students from all branch and passouts can get benefit from the workshops. Apart from these workshop ,we have workshops on IOT , cloud computing ,android app development. We also have Inter college competitions which are our major prize winning event for you. This includes competitions on roborace, coding , hacking ,circuitry and much more. To add to the our popular events list, we have motivational session by many distinctive personalities as well.
-                        <br /><br />
-                        <div class="row">
+		<!-- Navigation Bar menu -->
+		<nav class="menu-left">
+			<ul>
+				<li><button onclick="pop('workshops')">WORKSHOPS</button></li>
+				<li><button onclick="pop('seminars')">SEMINARS</button></li>
+				<li><button onclick="pop('competitions')">COMPETITIONS</button></li>
+			</ul>
+		</nav>
+		<nav class="menu-right">
+			<ul>
+				<li><button onclick="pop('gallery')">GALLERY</button></li>
+				<li><button onclick="pop('sponsors')">SPONSORS</button></li>
+				<li><button onclick="pop('team')">TEAM</button></li>
+			</ul>
+		</nav>
 
-                            <div class="col-sm-3 col-md-6 col-lg-4">
-                                 <center> <p> <img src="images/comp/coding.jpg" class="img-responsive" alt="Coding Image" style="max-width:400px ;max-height:400px;height:300px;"></p></center>
-                            </div>
+		<div id="navigation">
+			<button style="background:transparent; border:none;z-index:20;outline:none"><img src="menu.png"></button>
+		</div>
+		<div id="phone-nav-back"></div>
 
-                            <div class="col-sm-3 col-md-6 col-lg-4" > 
-                                <center>  <p> <img src="images/comp/ecd.jpg" class="img-responsive" alt="Electronics ciruit design Image" style="max-width:400px ;max-height:400px ;"></p></center> 
-                            </div>
 
-                            <div class="col-sm-3 col-md-6 col-lg-4">
-                                <center>  <p> <img src="images/comp/roborace.jpg" class="img-responsive" alt="roborace Image" style="max-width:400px ;max-height:400px ;"></p></center>
-                            </div>
+		<!-- Main Home Page -->
+		<div id="overlay">
+			<center>
+				<div id="circle1"></div>
+				<div id="circle2"></div>    
+				<div id="circle31"></div>
+			</center>
+			<div id="intro-wrap">
+					<h2 id="clg"></h2>
+					<h1 class="invento"><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
+					<h2 id="date"><span>17 - 18</span> <span>&nbsp;SEPTEMBER</span><span>&nbsp; 2017</span></h2>
+				</div>
+			<div id="btns">
+				<center>
+					<ul>
+						<li id="about-btn"><a class="button main-btn btn-top" onclick="pop('about')"><div>ABOUT US</div></a></li>
+						<li class="btn-space"></li>
+						<li id="campus-btn"><a class="button main-btn" onclick="pop('campus')"><div>CAMPUS AMBASSDOR</div></a></li>
+						<li class="btn-space"></li>
+						<li id="contact-btn"><a class="button main-btn btn-top" onclick="pop('contact')"><div>CONTACT US</div></a></li>
+					</ul>
+				</center>
+			</div>
+		</div>
 
-                            <br /><br />
-                        </div><!-- row // -->
-                    </p>
-                </div><!-- content // -->
-            </div><!-- body // -->      
-        </div><!-- sub-section // -->
-        <!-- Script wriiten by mohit -->
-        <script>
-            $('.pop-up').hide();
-            function pop(key){
-                $('.pop-up,#phone-nav-back').hide();
-                $(".menur,.menul").css({'display':"none"});
-                $('#overlay').fadeOut(500);
-                $('#'+key).fadeIn(1000);
-                $(".menu-left").addClass("menul");
-                $(".menu-right").addClass("menur");
-            }
-            
-            function closepop(closekey){
-                $('#'+closekey).fadeOut(500);
-                $('#overlay').fadeIn(1000);
-                if($(window).width()<700){
-                $(".menur ,.menul").css({'display':'block','top':'19em'});
-                $(".menul ul li").css({'transform':'rotateY(15deg)','padding':'1px'});
-                $(".menur ul li").css({'transform':'rotateY(-15deg)','padding':'1px'});
-                }
-                $(".menu-left").removeClass("menul");
-                $(".menu-right").removeClass("menur");
-            }
+		<!-- sub sections starts -->
+		<div class="pop-up">
+			<div class="body">
+				
+			</div><!-- body // -->      
+		</div><!-- pop-up // -->
 
-            $("#navigation :button").click(function() {
-                $(".menur,.menul").css({'top':"0"});
-                $(".menur ul li,.menul ul li").css({'transform':'rotateY(0deg)','padding':'5px'});
-                $(".menur ,.menul,#phone-nav-back").fadeToggle();
-            });
-        </script>
 
-        <!-- style written by mohit -->
-        <style>
-            .pop-up{
-                height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
-            }
-            .body{
-                margin:40px;
-                padding:20px;
-                background: rgba(255,255,255,.1);
-                font-size:20px;
-                font-family:raleway;
-                height:90%;
-                border-radius:15px;
-                /*overflow-y: scroll;*/
-                border: 2px solid transparent;
-            }
-            .sub-section > .body:hover{
-                background: rgba(255,255,255,.12);              
-            }
-            .sub-section > .body:hover::before {
-                border-top-color: #60daaa;
-                border-right-color: #60daaa;
-                -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-                transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-            }
-            .sub-section > .body:hover::after {
-                border-bottom-color: #60daaa;
-                border-left-color: #60daaa;
-                -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-                transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-            }
+		<script src="js/particles.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/ietdavv-effect.js"></script>
+		<script src="js/sub-section.js"></script>
 
-            .header{
-                padding-bottom:10px;
-                margin:auto;
-                font-size:1.5em;
-            }
-            .header button{border:none;background:transparent;outline:none;}
-            .header .title{
-                font-size:1.5em;
-            }
-            .content{
-                padding-top:10px;
-                padding-bottom:10px;
-                padding-right: 20px;
-                overflow-y:scroll;
-                height: inherit;
-                text-align:justify;                             
-            }
-            .close-btn{
-                float:right;
-                cursor:pointer;
-                cursor: hand;
-            }
-
-            /* Close Button Animation */
-            .close-btn img{
-                width: 40px;
-                height: 40px;
-                /*position: absolute;*/
-                -webkit-transition: -webkit-transform .25s, opacity .25s;
-                -moz-transition: -moz-transform .25s, opacity .25s;
-                transition: transform .25s, opacity .25s;
-                opacity: .75;
-            }
-            .close-btn img:hover {
-                -webkit-transform: rotate(270deg);
-                -moz-transform: rotate(270deg);
-                transform: rotate(270deg);
-                opacity: 1;
-            }
-            
-            /* customized scroll bar */
-            .content::-webkit-scrollbar-track
-            {
-                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-                background-color: transparent;
-                border-radius: 10px;
-                border: solid 3px transparent;
-            }
-
-            .content::-webkit-scrollbar
-            {
-                width: 5px;
-                background-color: transparent;
-            }
-
-            .content::-webkit-scrollbar-thumb
-            {
-                /*background-color: #0ccfc1;*/
-                border-radius: 5px;
-                background-color: transparent;;
-                background-image: -webkit-gradient(linear,
-                                       40% 0%,
-                                       75% 84%,
-                                       from(#0ccfc1),
-                                       to(#0ccfc1),
-                                       color-stop(.6,#60daaa));
-            }
-        @media only screen and (max-width: 700px) {
-            #sample{ margin:20px;   }
-        }
-        </style>
-        <!-- scripts -->
-        <script src="js/particles.min.js"></script>
-        <script src="js/app.js"></script>
-        <style type="text/css">
-            @font-face {
-                font-family:titlefont;
-                src: url(fonts/DeathHector.otf) format('truetype');
-            }
-            body {
-                margin:0;
-                text-align: center;  color: #fff;
-                overflow: hidden;
-            }
-            #intro-wrap h1{
-                font-family: titlefont; font-weight: 100; letter-spacing:5px;}
-            }
-        </style>
-
-        <script>
-            var clg=new String("IET-DAVV");
-            for(var i=0;i<clg.length;i++)
-            {
-                var node = document.createElement("span");
-                var textnode = document.createTextNode(clg[i]+"\xa0");
-                node.appendChild(textnode);
-                //node.setAttribute('id','clg'+i);
-                document.getElementById("clg").appendChild(node); 
-            }
-
-        </script>
-    </body>
+		<style>
+			.item {    cursor: zoom-in;  }
+		</style>
+		<!-- zoom on click-->
+		<script type="text/javascript">
+			/*$(function() {
+				$('img').on('click', function() {
+					$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+					$('#enlargeImageModal').modal('show');
+				});
+			});*/
+		</script>
+	</body>
 </html>
