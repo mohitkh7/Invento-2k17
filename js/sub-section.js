@@ -1,17 +1,26 @@
 // JS code for sub-sections
 
 $('.pop-up').hide();
+var w=$(window).width();
 function pop(key){
-	$('.pop-up,#phone-nav-back').hide();
-	$(".menur,.menul").css({'display':"none"});
+	var subsection='subsection/'+key+'.html';
+	$('#phone-nav-back').hide();
+	if($(window).width()<700){
+		$(".menu-right ,.menu-left").css({'display':'none'});
+	}
+		$.get(subsection, function(data, status){
+        	$(".body").hide().html(data).fadeIn(1000);
+    	});
 	$('#overlay').fadeOut(500);
-	$('#'+key).fadeIn(1000);
+	$('.pop-up').fadeIn(1000);
+
 	$(".menu-left").addClass("menul");
 	$(".menu-right").addClass("menur");
 }
 
-function closepop(closekey){
-	$('#'+closekey).fadeOut(500);
+
+function closepop(){
+	$('.pop-up').fadeOut(500);
 	$('#overlay').fadeIn(1000);
 	if($(window).width()<700){
 		$(".menur ,.menul").css({'display':'block','top':'19em'});
@@ -28,7 +37,8 @@ $("#navigation :button").click(function() {
 	$(".menur ,.menul,#phone-nav-back").fadeToggle();
 });
 
-
+/*
+>>>>>>> FETCH_HEAD
 //transition from  main page to any sub-sections
 function home_to_section(des){
 	$('#home').fadeOut(1000);
@@ -40,4 +50,8 @@ function home_to_section(des){
 function section_to_home(src){
 	$(src).fadeOut(1000);
 	$('#home').fadeIn(2000);
+<<<<<<< HEAD
 }
+=======
+}*/
+
