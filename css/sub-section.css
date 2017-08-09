@@ -13,20 +13,9 @@
 	/*overflow-y: scroll;*/
 	border: 2px solid transparent;
 }
-.sub-section > .body:hover{
+
+.pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
-}
-.sub-section > .body:hover::before {
-	border-top-color: #60daaa;
-	border-right-color: #60daaa;
-	-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-.sub-section > .body:hover::after {
-	border-bottom-color: #60daaa;
-	border-left-color: #60daaa;
-	-webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
 .header{
@@ -39,7 +28,9 @@
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+
 .header button{border:none;background:transparent;outline:none;}
+
 .header .title{
 	width:90%;
 }
