@@ -1,6 +1,7 @@
 // JS code for sub-sections
 
 $('.pop-up').hide();
+
 var w=$(window).width();
 function pop(key){
 	var subsection='subsection/'+key+'.html';
@@ -36,22 +37,3 @@ $("#navigation :button").click(function() {
 	$(".menur ul li,.menul ul li").css({'transform':'rotateY(0deg)','padding':'5px'});
 	$(".menur ,.menul,#phone-nav-back").fadeToggle();
 });
-
-/*
->>>>>>> FETCH_HEAD
-//transition from  main page to any sub-sections
-function home_to_section(des){
-	$('#home').fadeOut(1000);
-	$(des).fadeIn(2000);
-};
-
-//transition from sub -section to home page
-
-function section_to_home(src){
-	$(src).fadeOut(1000);
-	$('#home').fadeIn(2000);
-<<<<<<< HEAD
-}
-=======
-}*/
-

@@ -26,10 +26,10 @@
 }
 .header .title{
 	font-size:1.5em;
+	font-family: 'Aldrich';
 	text-transform: uppercase;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
-
 .header button{border:none;background:transparent;outline:none;}
 
 .header .title{
@@ -101,6 +101,10 @@
 						   color-stop(.6,#60daaa));
 }
 
+/* sub section title effect */
+
+
+/* Media Queires */
 @media only screen and (max-width: 700px) {
 
 	#sample{
