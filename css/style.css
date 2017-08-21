@@ -172,6 +172,10 @@ nav{z-index:10;}
 #btns #campus-btn{transform:rotateX(60deg);}
 #campus-btn .main-btn{ width:350px;perspective:200px;height:40px;box-shadow:2px 2px 0px #7cf4ff;}
 #campus-btn div{transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg); left:50px;}
+@-moz-document url-prefix() {
+    #campus-btn .main-btn{ width:320px;}
+    #campus-btn div{transform:rotateX(0deg) scaleY(2.2) scaleX(1) skewX(0deg);left:30px;letter-spacing: 1px;}
+}
 
 .main-btn div{position:absolute;top:0px;}
 .main-btn {
