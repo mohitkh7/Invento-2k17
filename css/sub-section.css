@@ -1,4 +1,5 @@
 /* css file for every sub section */
+#wait{position:absolute;left:40%;top:50%;display:none;}
 .pop-up{
 	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 }
@@ -6,27 +7,39 @@
 	margin:40px;
 	padding:20px;
 	background: rgba(255,255,255,.1);
-	font-size:20px;
+	font-size: 20px;
 	font-family:raleway;
 	height:90%;
 	border-radius:15px;
 	/*overflow-y: scroll;*/
-	border: 2px solid transparent;
+	border:2px solid #68fff4;
 }
-.sub-section > .body:hover{
+.body::before, .body::after {
+    position: absolute;
+    background:transparent;
+    content: '';
+    z-index: 1;
+}
+.body::before {
+	border-top:2px solid #009696;
+	border-bottom:2px solid black;
+    width: 700px;
+    left: calc(50% - 350px);
+    height: calc(100% - 66px);
+    top:40px;
+}
+.body::after {
+	border-left:2px solid #009696;border-right:2px solid #009696;
+    height: 200px;
+    left: 40px;
+    width: calc(100% - 80px);
+    top: calc(50% - 100px);
+}
+.body > * {
+    position: relative; z-index: 2; /* ensure any child elements sit above pseudos */
+}
+.pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
-}
-.sub-section > .body:hover::before {
-	border-top-color: #60daaa;
-	border-right-color: #60daaa;
-	-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-.sub-section > .body:hover::after {
-	border-bottom-color: #60daaa;
-	border-left-color: #60daaa;
-	-webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
 .header{
@@ -39,8 +52,16 @@
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+
 .header button{border:none;background:transparent;outline:none;}
 
+.header .title{
+	width:90%;
+}
+.header .close-btn{
+	width:10%;
+	text-align: right;
+}
 .content{
 	padding-top:10px;
 	padding-bottom:10px;
@@ -50,18 +71,19 @@
 	text-align:justify;								
 }
 .close-btn{
-	float:right;
-	cursor:pointer;
-	cursor: hand;
+	float: 		right;
+	cursor: 	pointer;
+	cursor: 	hand;
+	display: 	inline-block;
 }
-
 /* Close Button Animation */
 .close-btn img{
 	/*top: 5px;*/
 	/*right: 5px;*/
-	width: 40px;
-	height: 40px;
+	/*height: auto;*/
 	/*position: absolute;*/
+	float: right;
+
 	-webkit-transition: -webkit-transform .25s, opacity .25s;
 	-moz-transition: -moz-transform .25s, opacity .25s;
 	transition: transform .25s, opacity .25s;
@@ -103,5 +125,33 @@
 }
 
 @media only screen and (max-width: 700px) {
-	#sample{ margin:20px;   }
+
+	#sample{
+		margin:20px;   
+	}
+	.body{
+		font-size: 12px;
+		margin:5px;
+		padding-left:3px;
+		padding-right:3px;
+		height : 98%;
+	}
+.body::before {
+	border-top:2px solid #009696;
+	border-bottom:2px solid black;
+    width: 100px;
+    left: calc(50% - 50px);
+    height: calc(100% - 66px);
+    top:5px;
+}
+.body::after {
+	border-left:2px solid #009696;border-right:2px solid #009696;
+    height: 100px;
+    left: 5px;
+    width: calc(100% - 5px);
+    top: calc(50% - 50px);
+}
+	.content{
+		padding-right: 10px;
+	}
 }
