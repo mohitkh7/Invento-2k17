@@ -44,14 +44,14 @@ body{overflow:hidden;}
 #clg span{font-size: 0.5em;margin-bottom:-5px;}
 #date{font-size:1em;}
 
-.menu-left{position:absolute; left:10px; top:19em; transform:skewX(0deg);perspective:100px}
+.menu-left{position:absolute; left:10px; top:18.5em; transform:skewX(0deg);perspective:100px}
 .menu-left ul li{   transform:rotateY(15deg); animation:none;}
 .menu-left ul li:nth-child(1){margin-left:0px; }
 .menu-left ul li:nth-child(2){margin-left:10px;}
 .menu-left ul li:nth-child(3){margin-left:0px; }
 .menu-left ul li button{  transform:skewX(0deg);font-size:0.8em; }
 
-.menu-right{position:absolute;left:52%; right:0; top:19em; transform:skewX(0deg);perspective:100px}
+.menu-right{position:absolute;left:52%; right:0; top:18.5em; transform:skewX(0deg);perspective:100px}
 .menu-right ul li{   transform:rotateY(-15deg); animation:none;}
 .menu-right ul li:nth-child(1){margin-left:0px;}
 .menu-right ul li:nth-child(2){margin-left:-10px;}
@@ -74,12 +74,12 @@ nav{z-index:100; }
 .btn-top{margin-top:0;}
 .btn-space{padding-left:0px;}
 #btns ul li{font-size:1.3em;}
-#btns{bottom:1em;}
-#btns #about-btn{float:left;margin-left:0px;transform:skewX(-30deg);with:50px;}
+#btns{bottom:0;}
+#btns #about-btn{float:left;margin-left:0px;transform:skewX(-30deg);}
 #about-btn .main-btn div{transform:skewX(30deg);}
-#about-btn .main-btn ,#contact-btn .main-btn{ height: 30px;}
+#about-btn .main-btn ,#contact-btn .main-btn{ height: 25px;}
 
-#btns #contact-btn{transform:skewX(30deg);margin-right:10px;position:absolute;bottom:2.9em;right:0;}
+#btns #contact-btn{transform:skewX(30deg);margin-right:5px;position:absolute;bottom:3.2em;right:0;}
 #contact-btn .main-btn div{transform:skewX(-30deg);}
 
 #btns #campus-btn{transform:rotateX(30deg);}

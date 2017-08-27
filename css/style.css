@@ -191,6 +191,7 @@ nav{z-index:10;}
 #campus-btn div{-webkit-transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg);
                 transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg); left:50px;
                  left:50px;}
+                 
 @-moz-document url-prefix() {
     #campus-btn .main-btn{ width:320px;}
     #campus-btn div{transform:rotateX(0deg) scaleY(2.2) scaleX(1) skewX(0deg);left:30px;letter-spacing: 1px;}

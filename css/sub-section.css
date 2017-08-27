@@ -1,5 +1,5 @@
 /* css file for every sub section */
-#wait{position:absolute;left:40%;top:50%;display:none;}
+#wait{position:absolute;left:40%;top:50%;}
 .pop-up{
 	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 }
@@ -38,6 +38,7 @@
 .body > * {
     position: relative; z-index: 2; /* ensure any child elements sit above pseudos */
 }
+.content-box{background:rgba(0,0,0,0.86);height:100%;width:100%;}
 .pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
 }
@@ -151,6 +152,7 @@
     width: calc(100% - 5px);
     top: calc(50% - 50px);
 }
+.content-box{background:rgba(0,0,0,0.7);}
 	.content{
 		padding-right: 10px;
 	}

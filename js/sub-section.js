@@ -13,7 +13,7 @@ function pop(key){
 	else {
 		$('#home').fadeIn();
 	}
-	$(".body").hide().load(subsection).fadeIn(1000);
+	$(".content-box").hide().load(subsection).fadeIn(1000);
 
 	$('#overlay').fadeOut(500);
 	$('.pop-up').fadeIn(1000);
