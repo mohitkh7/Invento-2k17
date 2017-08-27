@@ -50,6 +50,8 @@ $("#navigation :button").click(function() {
 	$(".menur ul li,.menul ul li").css({'transform':'rotateY(0deg)','padding':'5px'});
 	$("#home,.menur ,.menul,#phone-nav-back").fadeToggle();
 });
+if(w<700){
 $("#home :button").click(function() {
 	$("#phone-nav-back,#home").fadeToggle();
 });
+}
