@@ -1,15 +1,35 @@
-				<div class="header">
-					<span class="title">Campus Ambassdor</span>
-					<button onclick="closepop()" class="close-btn">
-						<img src="images/close_btn_image.png" alt="X"/>
-					</button>
-				</div>
-				<div class="content">
-					<p>
-						IET Cultural Committee has launched a Campus Ambassador Program for the students of all over the India to act as a link between the Invento and your campus.
-						<br/><br/> 
-						As a Campus ambassador, you would be the representative of IET-DAVV in your college. You would be required to publicize our event through various Social Media Platforms and regulate messages in the Whatsapp Group of your college and friends. 
-						<br/><br/> 
-						Being a Campus Ambassador is a delightful opportunity as it makes you stand apart from the crowd. You will receive the Authentic Certificate and Goodies for being a part of prolific club of Central India’s Biggest Techfest.
-					</p>
-				</div><!-- content // -->
+<script src="js/google-sheet.js"></script>
+
+<div class="header">
+	<button onclick="closepop()" class="close-btn">
+		<img src="images/close_btn_image.png" alt="X"/>
+	</button>
+	<span class="title">Campus Ambassdor</span>
+</div>
+<div class="content">	
+	<h2>So, what is a Campus Ambassador?</h2>
+	<p>
+		IET Cultural Committee has launched a Campus Ambassador Program for the students of all over the India to act as a link between the Invento and your campus.
+		<br/><br/> 
+		As a Campus ambassador, you would be the representative of IET-DAVV in your college. You would be required to publicize our event through various Social Media Platforms and regulate messages in the Whatsapp Group of your college and friends. 
+		<br/><br/> 
+		Being a Campus Ambassador is a delightful opportunity as it makes you stand apart from the crowd. You will receive the Authentic Certificate and Goodies for being a part of prolific club of Central India’s Biggest Techfest.
+	</p>
+	<center>
+		<button id="apply-btn" onclick="pop('ca/ca-form')">Apply</button>
+	</center>
+	</div><!-- content // -->
+<style type="text/css">
+	label{font-family: 'Aldrich';}
+	.input{border:none;outline:none;background:transparent;border-bottom:2px solid white; border-radius:0;font-size:1.5em;}
+	.input:focus{border-bottom:2px solid #68fff4;}
+	.content div{margin-bottom:30px;}
+	#apply-btn{border:2px double teal;outline:none;color:white;padding:7px 25px 7px 25px;
+		background: -moz-linear-gradient(top,#41f4eb 0%,teal);
+		background: -webkit-gradient(linear, left top, left bottom,from(#41f4eb),to(teal));
+		border-radius:5px;}
+
+@media only screen and (max-width: 700px) {
+	#apply-btn{width:90%; margin-bottom:50px;margin-top:20px;}
+}
+</style>
