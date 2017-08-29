@@ -5,9 +5,7 @@
 }
 .body{
 	margin:40px;
-	padding:20px;
 	background: rgba(255,255,255,.1);
-	font-size: 20px;
 	font-family:raleway;
 	height:90%;
 	border-radius:15px;
@@ -38,7 +36,7 @@
 .body > * {
     position: relative; z-index: 2; /* ensure any child elements sit above pseudos */
 }
-.content-box{background:rgba(0,0,0,0.86);height:100%;width:100%;}
+.content-box{border-radius:15px;padding:30px;font-size:1.3em; background:rgba(0,0,0,0.86);height:100%;width:99%;overflow-x:hidden;}
 .pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
 }
@@ -49,24 +47,20 @@
 	font-size:1.5em;
 }
 .header .title{
-	font-size:1.5em;
+	font-family: 'Aldrich';
+	font-size:1.2em;
 	text-transform: uppercase;
-	text-decoration: underline;
 }
 
 .header button{border:none;background:transparent;outline:none;}
 
-.header .title{
-	width:90%;
-}
 .header .close-btn{
 	width:10%;
 	text-align: right;
 }
 .content{
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right: 20px;
+	font-family: 'Lato';
+	padding:10px 20px 10px 30px;
 	overflow-y:scroll;
 	height: inherit;
 	text-align:justify;								
@@ -135,7 +129,7 @@
 		margin:5px;
 		padding-left:3px;
 		padding-right:3px;
-		height : 98%;
+		height : 100%;
 	}
 .body::before {
 	border-top:2px solid #009696;
@@ -152,8 +146,6 @@
     width: calc(100% - 5px);
     top: calc(50% - 50px);
 }
-.content-box{background:rgba(0,0,0,0.7);}
-	.content{
-		padding-right: 10px;
-	}
+.content-box{background:rgba(0,0,0,0.7);padding:5px;margin-top:50px;height:92%;}
+.content{padding:5px 5px 80px 3px;width: 100%;}
 }

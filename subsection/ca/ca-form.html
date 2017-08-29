@@ -1,0 +1,50 @@
+<script src="js/google-sheet.js"></script>
+
+<div class="header">
+	<span class="title">Campus Ambassdor</span>
+	<button onclick="closepop()" class="close-btn">
+		<img src="images/close_btn_image.png" alt="X"/>
+	</button>
+</div>
+<div class="content">
+	<form name="ca" id="foo" action="" class="container col-xs-offset-0 col-md-offset-2">
+	<p>Apply for Campus Ambassador</p>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">Name :</label>
+			<input type="text" name="Name" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">College :</label>
+			<input type="text" name="College" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">Year :</label>
+			<input type="text" name="Year" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">Mobile :</label>
+			<input type="number" name="Mobile" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">Email :</label>
+			<input type="email" name="Email" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-2">Facebook profile :</label>
+			<input type="text" name="fb-id" class="col-xs-11 col-md-5 input-sm input" required>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<label class="col-xs-11 col-md-8">Why do you want to become CR?</label>
+			<textarea name="cr-reason" class="col-xs-11 col-md-6 input-sm input" required></textarea>
+		</div>
+		<div class="col-xs-11 col-md-8">
+			<input type="submit" class="form-control btn btn-success" value="REGISTER" style="width:100px;">
+		</div>
+	</form>
+	</div><!-- content // -->
+<style type="text/css">
+	label{font-family: 'Aldrich';}
+	.input{border:none;outline:none;background:transparent;border-bottom:2px solid white; border-radius:0;font-size:1.2em;}
+	.input:focus{border-bottom:2px solid #68fff4;}
+	.content div{margin-bottom:30px;}
+</style>
