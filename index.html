@@ -36,6 +36,10 @@
 				<li><button onclick="pop('competitions')">COMPETITIONS</button></li>
 			</ul>
 		</nav>
+		<nav id="home">
+			<button onclick="closepop()">HOME</button>
+		</nav>
+
 		<nav class="menu-right">
 			<ul>
 				<li><button onclick="pop('gallery')">GALLERY</button></li>
@@ -45,7 +49,7 @@
 		</nav>
 
 		<div id="navigation">
-			<button style="background:transparent; border:none;z-index:20;outline:none"><img src="menu.png"></button>
+			<button style="background:transparent; border:none;z-index:20;outline:none"><img src="basic_images/menu.png"></button>
 		</div>
 		<div id="phone-nav-back"></div>
 
@@ -77,19 +81,39 @@
 
 		<!-- sub sections starts -->
 		<div class="pop-up">
-			<div class="body">
-				
+			<div class="body" style="background:url(basic_images/team_back.png) no-repeat; background-size:cover;">
+				<div class="content-box">
+
+				</div>
 			</div><!-- body // -->      
 		</div><!-- pop-up // -->
-
-
+<div id="wait" style="background:rgba(0,0,0,0.9);position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;">
+<div id="wait-circle">
+	<div id="circle1"></div>
+	<div id="circle2"></div>    
+	<div id="circle31"></div>
+	<center>
+		<div id="wait-title">
+			<h1 class="invento" style="font-family:titlefont">INVENTO</h1>
+			<h3>Loading......</h3>
+		</div>
+	</center>
+</div>
+</div>
 		<script src="js/particles.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/ietdavv-effect.js"></script>
 		<script src="js/sub-section.js"></script>
 
 		<style>
-			.item {    cursor: zoom-in;  }
+			.item { cursor: zoom-in;  }
 		</style>
+		<script type="text/javascript">
+			var w=$(window).width();
+			$('body').css('width',w);
+			$(window).load(function(){
+			   $('#wait').fadeOut();
+			});
+		</script>
 	</body>
 </html>
