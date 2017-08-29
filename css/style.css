@@ -43,7 +43,7 @@ canvas{  display:block;  vertical-align:bottom;}
 [id^="circle"]{
   position:absolute;left:36%; top:2em;z-index:1;
     }
-#circle31{background:rgba();
+#circle31{
         width:20em;height:20em;
         border-radius:30em;
         margin:1.5em;
