@@ -1,4 +1,5 @@
 /* css file for every sub section */
+#wait{position:absolute;left:40%;top:50%;}
 .pop-up{
 	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 }
@@ -11,13 +12,36 @@
 	height:90%;
 	border-radius:15px;
 	/*overflow-y: scroll;*/
-	border: 2px solid transparent;
+	border:2px solid #68fff4;
 }
-
+.body::before, .body::after {
+    position: absolute;
+    background:transparent;
+    content: '';
+    z-index: 1;
+}
+.body::before {
+	border-top:2px solid #009696;
+	border-bottom:2px solid black;
+    width: 700px;
+    left: calc(50% - 350px);
+    height: calc(100% - 66px);
+    top:40px;
+}
+.body::after {
+	border-left:2px solid #009696;border-right:2px solid #009696;
+    height: 200px;
+    left: 40px;
+    width: calc(100% - 80px);
+    top: calc(50% - 100px);
+}
+.body > * {
+    position: relative; z-index: 2; /* ensure any child elements sit above pseudos */
+}
+.content-box{background:rgba(0,0,0,0.86);height:100%;width:100%;}
 .pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
 }
-
 
 .header{
 	padding-bottom:10px;
@@ -117,6 +141,22 @@
 		padding-right:3px;
 		height : 98%;
 	}
+.body::before {
+	border-top:2px solid #009696;
+	border-bottom:2px solid black;
+    width: 100px;
+    left: calc(50% - 50px);
+    height: calc(100% - 66px);
+    top:5px;
+}
+.body::after {
+	border-left:2px solid #009696;border-right:2px solid #009696;
+    height: 100px;
+    left: 5px;
+    width: calc(100% - 5px);
+    top: calc(50% - 50px);
+}
+.content-box{background:rgba(0,0,0,0.7);}
 	.content{
 		padding-right: 10px;
 	}
