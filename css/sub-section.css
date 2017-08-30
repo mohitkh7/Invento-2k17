@@ -47,12 +47,11 @@
 	font-size:1.5em;
 }
 .header .title{
-
 	font-family: 'Aldrich';
 	font-size:1.2em;
 	text-transform: uppercase;
-
 }
+
 .header button{border:none;background:transparent;outline:none;}
 
 .header .close-btn{
@@ -120,10 +119,6 @@
 						   color-stop(.6,#60daaa));
 }
 
-/* sub section title effect */
-
-
-/* Media Queires */
 @media only screen and (max-width: 700px) {
 
 	#sample{

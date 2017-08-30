@@ -180,7 +180,6 @@ nav{z-index:10;}
 #btns #contact-btn{-webkit-transform:skewX(60deg);
                     transform:skewX(60deg);}
 #contact-btn .main-btn{ width:190px;height: 30px;box-shadow:-2px 2px 0px #7cf4ff; }
-
 #contact-btn .main-btn div{-webkit-transform:skewX(-60deg);
                             transform:skewX(-60deg);}
 
