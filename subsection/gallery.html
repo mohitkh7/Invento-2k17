@@ -1,83 +1,72 @@
-				<div class="header">
-					<span class="title">Gallery</span>
-					<button onclick="closepop()" class="close-btn">
-						<img src="images/close_btn_image.png" alt="X"/>
-					</button>
-				</div>
-				<div class="content">
-					<p>
-						<div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-									</div>
-									<div class="modal-body">	
-										<img src="" class="enlargeImageModalSource" style="width: 100%;">
-									</div>
-								</div>
-							</div>
-						</div>
-	
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#myCarousel" data-slide-to="1"></li>
-								<li data-target="#myCarousel" data-slide-to="2"></li>
-								<li data-target="#myCarousel" data-slide-to="3"></li>
-								<li data-target="#myCarousel" data-slide-to="4"></li>
-								<li data-target="#myCarousel" data-slide-to="5"></li>
-								<li data-target="#myCarousel" data-slide-to="6"></li>
-								<li data-target="#myCarousel" data-slide-to="7"></li>
-							</ol>
-							<center>
-								<!-- Wrapper for slide -->
-								<div class="carousel-inner">
+<style>
+		ul{
+			list-style: none outside none;
+			padding-left: 0;
+			margin: 0;
+		}
+	</style>
 
-									<div class="item active">
-										<img src="images/invento/IMG_9832.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
+	 <script>
+		 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+				loop:true,
+				keyPress:true
+			});
+			$('#image-gallery').lightSlider({
+				gallery:true,
+				item:1,
+				thumbItem:5,
+				slideMargin: 0,
+				speed:500,
+				auto:true,
+				loop:true,
+				onSliderLoad: function() {
+					$('#image-gallery').removeClass('cS-hidden');
+				}  
+			});
+		});
+	</script>
 
-									<div class="item">
-										<img src="images/invento/DSC00002.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
 
-									<div class="item">
-										<img src="images/invento/IMG_9359.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
+<div class="header">
+	<span class="title">Gallery</span>
+	<button onclick="closepop()" class="close-btn">
+		<img src="images/close_btn_image.png" alt="X"/>
+	</button>
+</div>
+<link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+		<script src="js/thumbnail-slider.js" type="text/javascript"></script>
+<div class="content">
+	<!--start-->
+	<div class="gallery-section" style="max-width: 448px; margin:auto;">
+		<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+			<li data-thumb="images/invento/1.jpg"> 
+				<img src="images/invento/1.jpg" />
+				 </li>
+			<li data-thumb="images/invento/2.jpg"> 
+				<img src="images/invento/2.jpg" />
+				 </li>
+			<li data-thumb="images/invento/3.jpg"> 
+				<img src="images/invento/3.jpg" />
+				 </li>
+			<li data-thumb="images/invento/4.jpg"> 
+				<img src="images/invento/4.jpg" />
+				 </li>
+			<li data-thumb="images/invento/5.jpg"> 
+				<img src="images/invento/5.jpg" />
+				 </li>
+			<li data-thumb="images/invento/6.jpg"> 
+				<img src="images/invento/6.jpg" />
+				 </li>
+			<li data-thumb="images/invento/7.jpg"> 
+				<img src="images/invento/7.jpg" />
+				 </li>
+			<li data-thumb="images/invento/8.jpg"> 
+				<img src="images/invento/8.jpg" />
+				 </li>
+		</ul>
+	</div>
+	<!--end-->
 
-									<div class="item">
-										<img src="images/invento/IMG_9432.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
 
-									<div class="item">
-										<img src="images/invento/IMG_9452.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
-
-									<div class="item">
-										<img src="images/invento/IMG_9440.JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
-
-									<div class="item">
-										<img src="images/invento/inv (22).JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
-
-									<div class="item">
-										<img src="images/invento/inv (24).JPG" alt="Invento Images" style="width:70%; height: 400px;">
-									</div>
-
-								</div>
-							</center>
-							<!-- Left and right controls -->
-							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" href="#myCarousel" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-								<span class="sr-only">Next</span>
-							</a>
-						</div>					
-					</p>
-				</div><!-- content // -->
+</div>
