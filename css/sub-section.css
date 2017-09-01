@@ -50,13 +50,12 @@
 	font-family: 'Aldrich';
 	font-size:1.2em;
 	text-transform: uppercase;
-	padding-left:19px;
 }
 
 .header button{border:none;background:transparent;outline:none;}
 
 .header .close-btn{
-	width:38px;
+	width:10%;
 	text-align: right;
 }
 .content{

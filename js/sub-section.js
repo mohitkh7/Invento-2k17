@@ -34,7 +34,7 @@ function closepop(){
 	$('.pop-up').fadeOut(500);
 	$('#overlay').fadeIn(1000);
 	if($(window).width()<700){
-		$(".menur ,.menul").css({'display':'block','top':'19em'});
+		$(".menur ,.menul").css({'display':'block','top':'18.5em'});
 		$(".menul ul li").css({'transform':'rotateY(15deg)','padding':'1px'});
 		$(".menur ul li").css({'transform':'rotateY(-15deg)','padding':'1px'});
 	}
